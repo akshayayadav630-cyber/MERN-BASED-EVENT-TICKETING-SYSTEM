@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MERN-Based Event Ticketing System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="backgroundAnimation"></canvas>
+
+  <section class="auth-screen">
+    <div class="auth-card">
+      <h1>MERN Event Ticketing</h1>
+      <p>Login or create account to continue.</p>
+      <form id="authForm">
+        <label for="authName" id="nameLabel" class="hidden">Full Name</label>
+        <input id="authName" class="hidden" type="text" placeholder="Enter your name">
+        <label for="authEmail">Email</label>
+        <input id="authEmail" type="email" placeholder="Enter email" required>
+        <label for="authPassword">Password</label>
+        <input id="authPassword" type="password" placeholder="Enter password" required>
+        <button class="cta" type="submit" id="authSubmit">Login</button>
+      </form>
+      <button class="link-btn" id="authToggle">Don't have an account? Sign up</button>
+      <p id="authMessage" class="status"></p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

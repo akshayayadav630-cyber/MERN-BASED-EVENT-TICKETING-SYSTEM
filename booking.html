@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | MERN Event Ticketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="backgroundAnimation"></canvas>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-badge">M</div>
+      <div>
+        <h1>MERN Event Ticketing</h1>
+        <p>Booking Page</p>
+      </div>
+    </div>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="my-bookings.html">My Bookings</a>
+    </nav>
+    <div class="user-actions">
+      <span id="welcomeUser"></span>
+      <button class="ghost small" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+  <main>
+    <section class="booking-panel">
+      <h2 class="section-title">Ticket Booking</h2>
+      <div class="panel-grid">
+        <div class="booking-flow">
+          <h3 id="selectedEventTitle">Selected Event</h3>
+          <p id="selectedEventMeta" class="muted"></p>
+          <div class="counter">
+            <button id="decrement">-</button>
+            <span id="ticketCount">1</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="cta" id="goPaymentBtn">Go to Payment</button>
+        </div>
+        <aside class="summary">
+          <h3>Booking Summary</h3>
+          <p><span>Event:</span><strong id="summaryEvent">-</strong></p>
+          <p><span>Price:</span><strong id="summaryPrice">Rs. 0</strong></p>
+          <p><span>Tickets:</span><strong id="summaryCount">1</strong></p>
+          <p class="total"><span>Total:</span><strong id="summaryTotal">Rs. 0</strong></p>
+          <p id="statusText" class="status">Select ticket quantity.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

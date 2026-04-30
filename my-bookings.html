@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings | MERN Event Ticketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="backgroundAnimation"></canvas>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-badge">M</div>
+      <div>
+        <h1>MERN Event Ticketing</h1>
+        <p>My Booking History</p>
+      </div>
+    </div>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="my-bookings.html">My Bookings</a>
+    </nav>
+    <div class="user-actions">
+      <span id="welcomeUser"></span>
+      <button class="ghost small" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+  <main>
+    <section class="booking-panel">
+      <h2 class="section-title">My Bookings</h2>
+      <div id="myBookingsList" class="my-bookings-list"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
